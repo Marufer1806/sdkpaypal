@@ -9,4 +9,4 @@ export const PAYPAL_API = process.env.PAYPAL_API
 
 export const PORT = 8888
 
-export const HOST = "http://localhost:3000"
+export const HOST = "http://localhost:8888"
