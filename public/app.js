@@ -21,9 +21,7 @@ paypal
             JSON.stringify(orderData, null, 2)
           );
           const transaction = orderData.purchase_units[0].payments.captures[0];
-          alert(`Transaction ${transaction.status}: ${transaction.id}
-            See console for all available details
-          `);
+          alert(`you order is: ${transaction.id} Thank you for your purchase`);
         });
     },
   })
