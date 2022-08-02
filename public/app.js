@@ -10,13 +10,13 @@ paypal
     },
     
     onApprove: function (data, actions) {
-      return fetch(`api/orders${data.orderID}/capture`, {
+      return fetch(`api/orders/${data.orderID}/capture`, {
         method: "post",
       })
         .then((response) => response.json())
         .then((orderData) => {
              console.log(
-            "Capture result",
+            "Captured",
             orderData,
             JSON.stringify(orderData, null, 2)
           );
